@@ -30,6 +30,7 @@ class CryptoUtils {
 public:
   CryptoUtils();
   ~CryptoUtils();
+  std::string rand_string(int min_length, int max_length);
   void prng_seed(std::uint_fast64_t seed);
   void prng_seed();
   template <typename T> T get() {
